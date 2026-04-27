@@ -9,7 +9,6 @@ export const maxDuration = 60;
 const openai = createOpenAI({
   baseURL: process.env.APP_OPENAI_BASE_URL || 'https://api.openai.com/v1',
   apiKey: process.env.APP_OPENAI_API_KEY,
-  compatibility: 'compatible',
 });
 
 export async function POST(req: Request) {
